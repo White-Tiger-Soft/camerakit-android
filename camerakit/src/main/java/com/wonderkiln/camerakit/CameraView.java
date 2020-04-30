@@ -235,26 +235,25 @@ public class CameraView extends CameraViewLayout {
         }
         mIsStarted = true;
         int cameraCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA);
-        int audioCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO);
 
         switch (mPermissions) {
             case PERMISSIONS_STRICT:
-                if (cameraCheck != PackageManager.PERMISSION_GRANTED || audioCheck != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(true, true);
+                if (cameraCheck != PackageManager.PERMISSION_GRANTED) {
+                    requestPermissions(true);
                     return;
                 }
                 break;
 
             case PERMISSIONS_LAZY:
                 if (cameraCheck != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(true, true);
+                    requestPermissions(true);
                     return;
                 }
                 break;
 
             case PERMISSIONS_PICTURE:
                 if (cameraCheck != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(true, false);
+                    requestPermissions(true);
                     return;
                 }
                 break;
@@ -513,7 +512,7 @@ public class CameraView extends CameraViewLayout {
         return mCameraImpl != null ? mCameraImpl.getCaptureResolution() : null;
     }
 
-    private void requestPermissions(boolean requestCamera, boolean requestAudio) {
+    private void requestPermissions(boolean requestCamera) {
         Activity activity = null;
         Context context = getContext();
         while (context instanceof ContextWrapper) {
@@ -525,7 +524,6 @@ public class CameraView extends CameraViewLayout {
 
         List<String> permissions = new ArrayList<>();
         if (requestCamera) permissions.add(Manifest.permission.CAMERA);
-        if (requestAudio) permissions.add(Manifest.permission.RECORD_AUDIO);
 
         if (activity != null) {
             ActivityCompat.requestPermissions(
