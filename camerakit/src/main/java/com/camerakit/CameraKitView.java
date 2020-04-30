@@ -49,12 +49,6 @@ public class CameraKitView extends GestureLayout {
     public static final int PERMISSION_CAMERA = 1;
 
     /**
-     * Flag for handling requesting the {@link android.Manifest.permission#RECORD_AUDIO}
-     * permission.
-     */
-    public static final int PERMISSION_MICROPHONE = 1 << 1;
-
-    /**
      * Flag for handling requesting the {@link android.Manifest.permission#WRITE_EXTERNAL_STORAGE}
      * permission.
      */
@@ -72,7 +66,7 @@ public class CameraKitView extends GestureLayout {
     @RestrictTo(Scope.LIBRARY_GROUP)
     @Retention(RetentionPolicy.SOURCE)
     @IntDef(flag = true,
-            value = {PERMISSION_CAMERA, PERMISSION_MICROPHONE, PERMISSION_STORAGE, PERMISSION_LOCATION})
+            value = {PERMISSION_CAMERA, PERMISSION_STORAGE, PERMISSION_LOCATION})
     @interface Permission {
     }
 
@@ -530,13 +524,6 @@ public class CameraKitView extends GestureLayout {
             if (getContext().checkSelfPermission(manifestPermission) == PackageManager.PERMISSION_DENIED) {
                 manifestPermissions.add(manifestPermission);
             }
-        }
-
-        if ((mPermissions | PERMISSION_MICROPHONE) == mPermissions) {
-//            String manifestPermission = Manifest.permission.RECORD_AUDIO;
-//            if (getContext().checkSelfPermission(manifestPermission) == PackageManager.PERMISSION_DENIED) {
-//                manifestPermissions.add(manifestPermission);
-//            }
         }
 
         if ((mPermissions | PERMISSION_STORAGE) == mPermissions) {
