@@ -32,7 +32,7 @@ bintray {
         repo = 'camerakit-v1-prereleases'
         name = 'camerakit-android'
         userOrg = 'camerakit'
-        vcsUrl = 'https://github.com/CameraKit/camerakit-android.git'
+        vcsUrl = 'https://github.com/White-Tiger-Soft/camerakit-android.git'
         licenses = ['MIT']
 
         version {
