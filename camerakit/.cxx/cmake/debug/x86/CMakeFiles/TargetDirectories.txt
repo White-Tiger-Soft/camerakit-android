@@ -1,0 +1,4 @@
+C:/Users/extre/Documents/camerakit-android/camerakit/.cxx/cmake/debug/x86/CMakeFiles/camerakit-core.dir
+C:/Users/extre/Documents/camerakit-android/camerakit/.cxx/cmake/debug/x86/CMakeFiles/camerakit.dir
+C:/Users/extre/Documents/camerakit-android/camerakit/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+C:/Users/extre/Documents/camerakit-android/camerakit/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,83 @@
+{
+  "stringTable": {
+    "0": "C:/Users/extre/Documents/camerakit-android/camerakit/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/extre/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/extre/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcamerakit_core_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC -std=gnu++14",
+    "2": "--target=i686-none-linux-android16 --gcc-toolchain=C:/Users/extre/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/extre/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcamerakit_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC -std=gnu++14"
+  },
+  "buildFiles": [
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "camerakit-Debug-x86": {
+      "buildCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" camerakit",
+      "buildType": "debug",
+      "toolchain": "3515547382",
+      "abi": "x86",
+      "artifactName": "camerakit",
+      "files": [
+        {
+          "src": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\jni_camera_surface_texture.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\jni_camera_surface_view.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\main.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\build\\intermediates\\cmake\\debug\\obj\\x86\\libcamerakit.so"
+    },
+    "camerakit-core-Debug-x86": {
+      "buildCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" camerakit-core",
+      "buildType": "debug",
+      "toolchain": "3515547382",
+      "abi": "x86",
+      "artifactName": "camerakit-core",
+      "files": [
+        {
+          "src": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\camerakit\\CameraSurfaceTexture.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\camerakit\\CameraSurfaceView.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\camerakit\\CameraSurfaceTexture.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\camerakit\\CameraSurfaceView.hpp",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\build\\intermediates\\cmake\\debug\\obj\\x86\\libcamerakit-core.so"
+    }
+  },
+  "toolchains": {
+    "3515547382": {
+      "cppCompilerExecutable": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

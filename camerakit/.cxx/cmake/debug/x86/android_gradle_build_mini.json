@@ -1,0 +1,25 @@
+{
+  "buildFiles": [
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "camerakit-Debug-x86": {
+      "artifactName": "camerakit",
+      "buildCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" camerakit",
+      "abi": "x86",
+      "output": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\build\\intermediates\\cmake\\debug\\obj\\x86\\libcamerakit.so"
+    },
+    "camerakit-core-Debug-x86": {
+      "artifactName": "camerakit-core",
+      "buildCommand": "C:\\Users\\extre\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\.cxx\\cmake\\debug\\x86\" camerakit-core",
+      "abi": "x86",
+      "output": "C:\\Users\\extre\\Documents\\camerakit-android\\camerakit\\build\\intermediates\\cmake\\debug\\obj\\x86\\libcamerakit-core.so"
+    }
+  }
+}
