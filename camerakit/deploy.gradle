@@ -36,7 +36,7 @@ bintray {
         licenses = ['MIT']
 
         version {
-            name = '0.13.6'
+            name = project.version
             released = new Date()
         }
     }
